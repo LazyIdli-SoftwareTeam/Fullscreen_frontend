@@ -1,0 +1,52 @@
+.scrollEleSpec{
+  width:100%;
+  overflow-x: hidden;
+  height:100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+  background: white;
+  color:black;
+  font-size: 2.5vh;
+  font-weight: bolder;
+  font-family: Montserrat;
+}
+.loopEle{
+  padding: 0 30px;
+}
+@media screen and (max-width:800px) {
+  .primary{
+    animation:textScroll 5s linear infinite ;
+    position: absolute;
+  }
+  .secondary{
+    animation:textScroll2 5s linear infinite ;
+    position: absolute;
+  }
+}.primary{
+  animation:textScroll 5s linear infinite ;
+  position: absolute;
+}
+.secondary{
+  animation:textScroll2 5s linear infinite ;
+  position: absolute;
+}
+
+@keyframes textScroll {
+  from {
+      left: 0%;
+    }
+    to {
+      left: -130%;
+    }
+}
+@keyframes textScroll2 {
+  from {
+      left: 130%;
+    }
+    to {
+      left: 0%;
+    }
+}

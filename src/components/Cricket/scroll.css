@@ -1,0 +1,31 @@
+.scrollEleSpec {
+  width: 100%;
+  overflow-x: hidden;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  position: relative;
+  background: #0c2226;
+  color: #f5d65a;
+  font-size: 24px;
+  font-weight: 500;
+  font-weight: bolder;
+}
+.loopEle {
+  padding: 0 30px;
+}
+.primary1 {
+  animation: textScroll1 7s linear infinite;
+  position: absolute;
+}
+
+@keyframes textScroll1 {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -250%;
+  }
+}
+
